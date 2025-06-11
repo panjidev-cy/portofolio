@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useRef, useEffect } from "react";
+import React, { useRef, useEffect, ElementType } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { SplitText as GSAPSplitText } from "gsap/SplitText";
@@ -21,7 +21,7 @@ export interface SplitTextProps {
   textAlign?: React.CSSProperties["textAlign"];
   onLetterAnimationComplete?: () => void;
   // tag?: keyof JSX.IntrinsicElements;
-  tag?: keyof React.ReactElement;
+  tag?: ElementType;
   sequenceDelay?: number; // Fixed typo from squenceDelay to sequenceDelay
 }
 
