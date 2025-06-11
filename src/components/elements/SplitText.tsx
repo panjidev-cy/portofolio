@@ -20,7 +20,8 @@ export interface SplitTextProps {
   rootMargin?: string;
   textAlign?: React.CSSProperties["textAlign"];
   onLetterAnimationComplete?: () => void;
-  tag?: keyof JSX.IntrinsicElements;
+  // tag?: keyof JSX.IntrinsicElements;
+  tag?: keyof React.ReactElement;
   sequenceDelay?: number; // Fixed typo from squenceDelay to sequenceDelay
 }
 
