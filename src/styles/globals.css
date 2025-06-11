@@ -8,6 +8,20 @@
 @theme {
   --color-panji: #ff00ff;
   --color-panji-rgb: 255, 0, 255;
+
+  --animate-buttonshow: buttonshow 1s ease-in normal forwards;
+  @keyframes buttonshow {
+    0% {
+      opacity: 0;
+      width: 0;
+      display: none;
+    }
+    100% {
+      opacity: 1;
+      width: 8rem;
+      display: block;
+    }
+  }
 }
 
 @theme inline {
