@@ -3,6 +3,7 @@ import HeroBranding from "@/components/fragments/hero/HeroBranding";
 import HeroHeading from "@/components/fragments/hero/HeroHeading";
 import HeroButtons from "@/components/fragments/hero/HeroButtons";
 import HeroArrow from "@/components/fragments/hero/HeroArrow";
+import DescriptionHero from "@/components/fragments/hero/DescriptionHero";
 
 function Hero() {
   return (
@@ -19,7 +20,9 @@ function Hero() {
 
           {/* description */}
         </div>
-        <div className="w-4/5 mt-10"></div>
+        <div className=" w-full md:w-4/5 mt-20">
+          <DescriptionHero />
+        </div>
       </div>
     </div>
   );
