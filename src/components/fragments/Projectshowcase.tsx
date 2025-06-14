@@ -5,6 +5,7 @@ import React, { useLayoutEffect, useRef } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { ScrollToPlugin } from "gsap/ScrollToPlugin";
+import ProjectCard from "./projectshowcase/ProjectCard";
 gsap.registerPlugin(TextPlugin, ScrollToPlugin);
 
 gsap.registerPlugin(ScrollTrigger, TextPlugin);
@@ -202,7 +203,7 @@ const ProjectShowcase = () => {
 
       {/* content */}
       <div ref={contentRef} className=" w-full h-full flex items-center justify-center">
-        <h1>Project Showcase</h1>
+        <ProjectCard></ProjectCard>
       </div>
     </section>
   );
